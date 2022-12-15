@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Shadows Into Light', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    color: #ff00ff;
+}
+
+p {
+    font-family: 'Shadows Into Light', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Shadows Into Light', sans-serif;
+
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    height: 100px;
+}
+
+.wrapper {
+    width: 1200px;
+
+    margin: 0 auto;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+
+
+    width: 200px;
+}
+
+.social-img {
+    width: 32px;
+    height: 32px;
+}
