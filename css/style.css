@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #ff00ff;
 }
 
+ul {
+    list-style-type: none;
+}
+
 p {
     font-family: 'Shadows Into Light', sans-serif;
 
@@ -83,4 +87,20 @@ a {
 
 .about-me-qualification {
     font-size: 24px;
+}
+
+.header-text {
+    font-size: 36px;
+}
+
+.plain-text {
+    font-size: 24px;
+}
+
+.contacts-about-content {
+    display: flex;
+}
+
+.contacts-content {
+    width: 433px;
 }
