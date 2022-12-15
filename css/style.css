@@ -97,6 +97,10 @@ a {
     font-size: 24px;
 }
 
+.about-content {
+    width: 767px;
+}
+
 .contacts-about-content {
     display: flex;
 }
