@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/arta.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <header class="header">
@@ -52,7 +56,41 @@
                         <p class="plain-text">Lorem</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="skills-code">
+            <div class="wrapper">
+                <div class="skills-code-content">
+                    <div class="skills-content">
+                        <h2 class="header-text">Skills: </h2>
+                        <ul class="skills-ul">
+                            <li><p class="plain-text">PHP</p></li>
+                            <li><p class="plain-text">JSON</p></li>
+                            <li><p class="plain-text">CSS3</p></li>
+                            <li><p class="plain-text">HTML5</p></li>
+                            <li><p class="plain-text">JavaScript</p></li>
+                            <li><p class="plain-text">jQuery</p></li>
+                            <li><p class="plain-text">LAMP</p></li>
+                            <li><p class="plain-text">Git</p></li>
+                            <li><p class="plain-text">OOP</p></li>
+                        </ul>
+                    </div>
+                    <div class="code-content">
+                        <h2 class="header-text">Code example: </h2>
+                        <pre>
+                            <code class="hljs language-php">
 
+    public function addToTable($table, $data): bool {
+        $insert = $this->queryFactory->newInsert();
+        $insert->into($table)->cols($data);
+
+        $sth = $this->pdo->prepare($insert->getStatement());
+        return $sth->execute($insert->getBindValues());
+    }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -104,3 +104,23 @@ a {
 .contacts-content {
     width: 433px;
 }
+
+.skills-code-content {
+    display: flex;
+}
+
+.skills-content {
+    width: 433px;
+}
+
+.skills-ul {
+    list-style-type: "x";
+    font-family: 'Shadows Into Light', sans-serif;
+    color: #c618c6;
+    font-size: 15px;
+}
+
+.skills-ul > li > p {
+    padding-left: 5px;
+}
+
