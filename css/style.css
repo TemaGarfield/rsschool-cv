@@ -188,3 +188,18 @@ a {
     width: 800px;
     height: 450px;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content > a > img {
+    width: 100px;
+}
+
+.footer-content > p {
+    font-weight: bold;
+    font-size: 36px;
+}
