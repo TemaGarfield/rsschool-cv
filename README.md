@@ -1,1 +1,0 @@
-https://TemaGarfield.github.io/rsschool-cv/
