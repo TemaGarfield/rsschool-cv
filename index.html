@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/arta.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="info">
+                <h1>Artsiom Kedzich</h1>
+                <ul class="social">
+                    <li><a href="mailto:artsiom.kedzich@gmail.com" class="social-link"><img src="./img/email-svgrepo-com.svg" alt="email" class="social-img"></a></li>
+                    <li><a href="https://github.com/TemaGarfield" target="_blank" class="social-link"><img src="./img/github-svgrepo-com.svg" alt="github" class="social-img"></a></li>
+                    <li><a href="https://www.linkedin.com/in/artsiom-kedzich-019380241/" target="_blank" class="social-link"><img src="./img/linkedin-svgrepo-com.svg" alt="linkedin" class="social-img"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about">
+            <div class="wrapper">
+                <div class="about-me">
+                    <div class="about-me-photo">
+                        <img src="./img/main-photo.png" alt="photo">
+                    </div>
+                    <div class="about-me-text">
+                        <h2 class="about-me-header">Artsiom Kedzich</h2>
+                        <p class="about-me-qualification">PHP Developer/Junior Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-about">
+            <div class="wrapper">
+                <div class="contacts-about-content">
+                    <div class="contacts-content">
+                        <h2 class="header-text">Contacts: </h2>
+                        <ul>
+                            <li><p class="plain-text">Phone: +375 (44) 784-22-13</p></li>
+                            <li><p class="plain-text">Telegram: @tema_garfield</p></li>
+                            <li><p class="plain-text">Skype: qwerty_artem</p></li>
+                        </ul>
+                    </div>
+                    <div class="about-content">
+                        <h2 class="header-text">About Me</h2>
+                        <p class="plain-text">Hi! I'm Junior PHP developer. I implemented some pet project on PHP. I’m a nice fun and friendly person, I’m honest and punctual, I work well in a team but also on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills-code">
+            <div class="wrapper">
+                <div class="skills-code-content">
+                    <div class="skills-content">
+                        <h2 class="header-text">Skills: </h2>
+                        <ul class="skills-ul">
+                            <li><p class="plain-text">PHP</p></li>
+                            <li><p class="plain-text">JSON</p></li>
+                            <li><p class="plain-text">CSS3</p></li>
+                            <li><p class="plain-text">HTML5</p></li>
+                            <li><p class="plain-text">JavaScript</p></li>
+                            <li><p class="plain-text">jQuery</p></li>
+                            <li><p class="plain-text">LAMP</p></li>
+                            <li><p class="plain-text">Git</p></li>
+                            <li><p class="plain-text">OOP</p></li>
+                        </ul>
+                    </div>
+                    <div class="code-content">
+                        <h2 class="header-text">Code example: </h2>
+                        <pre>
+                            <code class="hljs language-php">
+
+    public function addToTable($table, $data): bool {
+        $insert = $this->queryFactory->newInsert();
+        $insert->into($table)->cols($data);
+
+        $sth = $this->pdo->prepare($insert->getStatement());
+        return $sth->execute($insert->getBindValues());
+    }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="languages-education">
+            <div class="wrapper">
+                <div class="languages-education-content">
+                    <div class="languages-content">
+                        <h2 class="header-text">Languages</h2>
+                        <ul>
+                            <li><p class="plain-text">English: Intermediate</p></li>
+                            <li><p class="plain-text">Russian: Native Speaker</p></li>
+                        </ul>
+                    </div>
+                    <div class="education-content">
+                        <h2 class="header-text">Education</h2>
+                        <p class="plain-text">2017 - 2024 / School of Business BSU, Information Resources Management / Minsk, Belarus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="wrapper">
+                <div class="portfolio-content">
+                    <h2 class="header-text">Portfolio</h2>
+                    <a href="https://github.com/TemaGarfield/CoctailShop" target="_blank">
+                        <img src="./img/portfolio.png" alt="portfolio">
+                        <p class="plain-text">Cocktail shop</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <a href="https://rs.school/js/" target="_blank"><img src="./img/rs_school_js.svg" alt="rsschool"></a>
+                <p class="plain-text">2022</p>
+                <a href="https://github.com/TemaGarfield" target="_blank"><img src="./img/github-svgrepo-com.svg" alt="github"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
