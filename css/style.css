@@ -155,10 +155,6 @@ a {
     flex-direction: column;
 }
 
-/*.code-content > pre > code {*/
-/*    height: 100%;*/
-/*}*/
-
 .code-content > pre > code {
     font-size: 20px;
 }
@@ -179,3 +175,16 @@ a {
     width: 767px;
 }
 
+.portfolio-content {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.portfolio-content > h2 {
+    font-size: 56px;
+}
+
+.portfolio-content > a > img {
+    width: 800px;
+    height: 450px;
+}
